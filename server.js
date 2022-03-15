@@ -13,7 +13,7 @@ const hostelSchema = new Schema({
     mess_Timing:String
   })
 const hostel=mongoose.model('hostel',hostelSchema)
-const url = 'mongodb://localhost:27017/hosteldb?readPreference=primary&appname=MongoDB%20Compass&ssl=false'
+const url = 'mongodb://my_user:my_pwd@localhost:27017/hosteldb'
 
 mongoose.connect(url, { useNewUrlParser: true})
 
