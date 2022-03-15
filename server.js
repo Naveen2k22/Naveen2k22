@@ -24,7 +24,7 @@ app.listen(3000, function(){
 app.get('/hostel',async (req,res) =>
 {
     console.log('Hello Guyss')
-    const hostellist = await hostel.find()
+    const hostel = await hostel.find()
     console.log(hostel)
     res.json(hostel);
     //res.send ("Naveen")
