@@ -25,8 +25,8 @@ app.get('/hostel',async (req,res) =>
 {
     console.log('Hello Guyss')
     const hostellist = await hostel.find()
-    console.log(hostellist)
-    res.json(hostellist);
+    console.log(hostel)
+    res.json(hostel);
     //res.send ("Naveen")
 });
 app.post('/hostel', (req,res) =>
